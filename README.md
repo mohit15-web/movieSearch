@@ -4,7 +4,7 @@
 This is a simple movie search website that allows users to search for movies and get information about them.
 
 ## Demo
-[Insert link to live demo if available]
+[Live Demo](https://mohit15-web.github.io/movieSearch/)
 
 ## Features
 - 🔍 Search for movies by title
