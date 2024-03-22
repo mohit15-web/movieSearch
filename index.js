@@ -30,7 +30,8 @@ async function fetchMovies(page = 1) {
         "flex-col",
         "gap-3",
         "rounded-md",
-        "shadow-2xl"
+        "shadow-2xl",
+        "mb-20"
       );
 
       var randomNumber = generateRandomDecimal();
