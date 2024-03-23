@@ -6,6 +6,8 @@ const API_KEY = `893a0a8`;
 const BASE_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=893a0a8`;
 
 async function fetchMovies(page = 1) {
+  window.scroll(0,0);
+
   if (inputText.value == "") {
     alert("Enter Movie Name");
   }
@@ -53,6 +55,7 @@ async function fetchMovies(page = 1) {
 }
 
 let debounce = (fetchMovies, delay) => {
+  // console.log("button clicked");
   let timer;
 
   return function () {
@@ -76,8 +79,8 @@ function displayPagination(currentPage, totalResults) {
 }
 
 document
-  .getElementById("inputBtn")
-  .addEventListener("click", debounce(fetchMovies, 300));
+  .getElementById("text")
+  .addEventListener("input", debounce(fetchMovies, 300));
 
 function generateRandomDecimal() {
   var randomDecimal = (Math.random() * 9 + 1).toFixed(2);
