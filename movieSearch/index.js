@@ -71,11 +71,11 @@ function displayPagination(currentPage, totalResults) {
   paginationContainer.innerHTML = `
   <button onclick="fetchMovies(${currentPage - 1})" ${
     currentPage == 1 ? "disabled" : ""
-  } class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Previous</button>
+  } class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Previous</button>
   <button class="text-2xl font-bold mx-5">${currentPage}</button>
   <button onclick="fetchMovies(${currentPage + 1})" ${
     currentPage == totalResults ? "disabled" : ""
-  } class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Next</button>`;
+  } class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Next</button>`;
 }
 
 document
